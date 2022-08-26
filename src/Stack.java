@@ -7,5 +7,14 @@ public class Stack {
         so.push(secondNode);
         Node<Integer> thirdNode = new Node<>(56);
         so.push(thirdNode);
+        so.peak();
+        so.pop();
+        System.out.println(so.isEmpty());
+        so.peak();
+        so.pop();
+        System.out.println(so.isEmpty());
+        so.peak();
+        so.pop();
+        System.out.println(so.isEmpty());
     }
 }

@@ -17,4 +17,34 @@ public class LinkedList<K> {
         }
     }
 
+    public INode<K> peak() {
+        return this.head;
+    }
+
+    public void append(INode<K> myNode) {
+        if (this.tail == null)
+            this.tail = myNode;
+        if (this.head == null) {
+            this.head = myNode;
+        } else {
+            this.tail.setNext(myNode);
+            this.tail = myNode;
+        }
+    }
+
+    public INode<K> pop() {
+        INode<K> tempNode = this.head;
+        this.head = tempNode.getNext();
+        tempNode.setNext(null);
+        return tempNode;
+    }
+
+    public void print() {
+        INode<K> temp = head;
+        while(temp != null) {
+            System.out.print(temp);
+            temp = temp.getNext();
+        }
+        System.out.println();
+    }
 }
