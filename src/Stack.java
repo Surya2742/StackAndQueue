@@ -2,19 +2,12 @@ public class Stack {
     public static void main(String[] args) {
         StackOperation so = new StackOperation();
         Node<Integer> firstNode = new Node<>(70);
-        so.push(firstNode);
+        so.enqueue(firstNode);
         Node<Integer> secondNode = new Node<>(30);
-        so.push(secondNode);
+        so.enqueue(secondNode);
         Node<Integer> thirdNode = new Node<>(56);
-        so.push(thirdNode);
-        so.peak();
-        so.pop();
-        System.out.println(so.isEmpty());
-        so.peak();
-        so.pop();
-        System.out.println(so.isEmpty());
-        so.peak();
-        so.pop();
-        System.out.println(so.isEmpty());
+        so.enqueue(thirdNode);
+        System.out.print("Linked List in Stack are : ");
+        so.print();
     }
 }

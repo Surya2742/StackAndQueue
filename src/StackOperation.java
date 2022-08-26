@@ -1,3 +1,5 @@
+import java.security.Key;
+
 public class StackOperation {
     LinkedList linkedList = new LinkedList();
     public void push(INode element) {
@@ -18,6 +20,14 @@ public class StackOperation {
         }
         else
             return false;
+    }
+
+    public void enqueue(INode element) {
+        linkedList.append(element);
+    }
+
+    public void print() {
+        linkedList.print();
     }
 
 }
