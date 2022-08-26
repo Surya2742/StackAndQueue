@@ -26,6 +26,10 @@ public class StackOperation {
         linkedList.append(element);
     }
 
+    public void dequeue() {
+        System.out.println(linkedList.pop());
+    }
+
     public void print() {
         linkedList.print();
     }
